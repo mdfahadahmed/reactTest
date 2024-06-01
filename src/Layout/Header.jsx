@@ -1,22 +1,15 @@
-import Logo from "../assets/Fahad-logo.png";
+import AmazonLogo from "../assets/amazon.webp";
 import Btn from "../Layout/Button";
-
-
+import Menu from "../Layout/Menu";
 
 export default function Header() {
   return (
-    <div className="flex justify-between px-10 items-center	grid-cols-3	bg-black">
+    <div className="flex justify-between px-10 items-center	grid-cols-3	bg-white border-b-2 border-gray-500	">
       <div >
-         <img className='w-60 h-auto' src={Logo} alt="avatar" />
+         <img className='w-60 h-auto' src={AmazonLogo} alt="Amazon Logo" />
       </div>
       <div>
-        <ul className="flex gap-8 items-center text-white font-bold font-mono text-xl uppercase">
-          <li href="#">Home</li>
-          <li href="#">About</li>
-          <li href="#">Profile</li>
-          <li href="#">Location</li>
-          <li href="#">Contact US</li>
-        </ul>
+        <Menu/>
       </div>
       <div>
         <Btn/>
