@@ -11,7 +11,7 @@ function ProductBox() {
         <h4>Price : $65</h4>
       </div>
       <hr />
-      <div className="flex justify-between p-2">
+      <div className=" flex justify-between p-2">
         <h4>Cat Name</h4>
         <h4>Tag</h4>
       </div>
