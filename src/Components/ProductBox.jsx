@@ -1,27 +1,30 @@
 import ProductImg from "../assets/React.webp";
 import CardButton from "../Layout/Cardbutton";
 
-
-function ProductBox() {
+const ProductBox = ({brand, price, category, Tag }) => {
   return (
-    <div className="border flex flex-col">
+    <div className="border flex-col">
       <img className="w-[400px] h-[400px]" src={ProductImg} alt="avatar" />
       <div className="flex justify-between p-2">
-        <h4>Product Name :</h4>
-        <h4>Price : $65</h4>
+        <h4>Brand Name : {brand}</h4>
+        <h4>Price: ${price}</h4>
       </div>
       <hr />
-      <div className=" flex justify-between p-2">
-        <h4>Cat Name</h4>
-        <h4>Tag</h4>
+      <div className="flex justify-between p-2">
+          <h4>Category Name: {category}</h4>
+          <h4>Tag: {Tag}</h4>
       </div>
       <hr />
+      <div className="flex justify-between p-2">
+          <h4>Category Name: {Category}</h4>
+          <h4>Tag: {Tag}</h4>
+      </div>
 
       <div className="mt-6 mb-5 text-center justify-center">
         <CardButton/>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default ProductBox;
