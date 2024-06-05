@@ -12,7 +12,7 @@ function App() {
       const productItem = async () => {
         const response = await fetch("https://dummyjson.com/products");
         const data = await response.json();
-        console.log(data)
+        // console.log(data)
         setItemslist(data);
       };
       productItem();

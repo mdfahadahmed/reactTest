@@ -1,9 +1,9 @@
-import Product from "../Components/ProductBox";
+import ProductBox from "../Components/ProductBox";
 
 function Home() {
   return (
     <div>
-      <Product/>
+      <ProductBox/>
     </div>
   )
 }
