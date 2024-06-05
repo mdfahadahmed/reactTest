@@ -15,10 +15,7 @@ const ProductBox = ({brand, price, category, Tag }) => {
           <h4>Tag: {Tag}</h4>
       </div>
       <hr />
-      <div className="flex justify-between p-2">
-          <h4>Category Name: {Category}</h4>
-          <h4>Tag: {Tag}</h4>
-      </div>
+
 
       <div className="mt-6 mb-5 text-center justify-center">
         <CardButton/>
