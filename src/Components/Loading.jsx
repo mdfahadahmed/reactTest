@@ -8,7 +8,7 @@ function LoadingGif() {
 
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 12000);
+    }, 1000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -16,7 +16,7 @@ function LoadingGif() {
   return (
     <div className="m m-auto pt-4 w-[100%] flex justify-center">
       {isLoading && (
-        <img className="justify-center items-center align-middle text-center flex flex-wrap w-[40%]" src={Loading} alt="Loading" />
+        <img className="justify-center items-center align-middle text-center flex flex-wrap w-[20%]" src={Loading} alt="Loading" />
       )}
     </div>
   );
