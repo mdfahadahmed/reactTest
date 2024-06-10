@@ -7,8 +7,8 @@ const Menu = () => {
       path: "/",
     },
     {
-      name: "About",
-      path: "/about",
+      name: "Product",
+      path: "/product",
     },
     {
       name: "Category",

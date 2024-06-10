@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import CardButton from '../Layout/Cardbutton';
 
 const ProductList = ({ itemslist }) => {
@@ -34,8 +35,9 @@ const ProductList = ({ itemslist }) => {
                     <h4>In Stock: {product.stock}</h4>
                     <h4>Warranty: {product.warrantyInformation}</h4>
                 </div>
-                <div className="mt-6 mb-5 text-center justify-center">
-                    <CardButton />
+                <div className="mt-6 mb-5 text-center justify-center" key={product.id}>
+                    <Link to={`/products/${product.id}`}><CardButton /></Link>
+                    {/* <Link to={`/products/${product.id}`}>{product.name}<CardButton /></Link> */}
                 </div>
             </div>
             ))};

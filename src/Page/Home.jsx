@@ -16,6 +16,7 @@ function Home() {
       productItem();
   }, []);
 
+
   return (
     <div>
       <div className="s py-24 px-3">
@@ -32,12 +33,9 @@ function Home() {
           
         )}
         </div>
-        
-        <div>
-        </div>
-        <div className="flex justify-center pt-10 items-center gap-8">
 
-        </div>
+        <div></div>
+        
       </div>
     </div>
   );

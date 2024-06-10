@@ -1,5 +1,6 @@
-import ProductImg from "../assets/React.webp";
 import CardButton from "../Layout/Cardbutton";
+import ProductImg from "../assets/React.webp";
+
 
 const ProductBox = ({brand, price, category, Tag }) => {
   return (
@@ -16,8 +17,7 @@ const ProductBox = ({brand, price, category, Tag }) => {
       </div>
       <hr />
 
-
-      <div className="mt-6 mb-5 text-center justify-center">
+      <div className="mt-6 mb-5 text-center">
         <CardButton/>
       </div>
     </div>
