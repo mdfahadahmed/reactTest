@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import LoadingPage from "../Components/Loading";
 import ProductList from "../Components/ProductList";
+import SearchCategory from "../Page/SearchCategory";
 
 
 function Home() {
@@ -18,12 +19,17 @@ function Home() {
 
 
   return (
-    <div>
-      <div className="s py-24 px-3">
-        <h3 className="text-black text-4xl capitalize font-bold text-center">
-          Product List
-        </h3>
+    <div className="pt-10">
+        <div>
+          <h3 className="text-black text-4xl capitalize font-bold text-center">
+            Product List
+          </h3>
+          <div>
+            {itemslist ? <SearchCategory products={itemslist.products} /> : <LoadingPage />}
+          </div>
+        </div>
 
+      <div className="root1">
         <div className="justify-center items-center">
         {itemslist ? (
           <ProductList itemslist={itemslist}/>

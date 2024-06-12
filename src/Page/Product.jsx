@@ -31,7 +31,7 @@ const Product = () => {
     return (
         <div className="py-16 text-center justify-center items-center">
             <h1 className="text-black text-4xl capitalize font-bold text-center">Single Product</h1>
-            <div className="t items-center justify-center">
+            <div className="items-center justify-center">
             <div className="flex justify-between items-center w-[85%]">
                 <div className="w-[40%]">
                     <img src={product.images} alt="product" />
