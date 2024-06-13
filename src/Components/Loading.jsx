@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import Loading from "../assets/Loading.gif";
+import Loading from "../Components/Loading";
 
 function LoadingGif() {
   const [isLoading, setIsLoading] = useState(true);

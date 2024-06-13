@@ -7,7 +7,7 @@ const ProductList = ({ itemslist }) => {
         return <div>This product is not available.</div>;
     }
     return (
-        <div className='flex flex-wrap justify-center items-center gap-10'>
+        <div className='pb-10 flex flex-wrap justify-center items-center gap-10'>
             {itemslist.products.map((product, index) => (
                 <div className="border flex flex-col rounded hover:bg-[#f5f5f5] hover:border-[#000000]" key={index}>
                 <img className="w-[100%] h-[400px]" src={product.images[0]} alt="avatar" />

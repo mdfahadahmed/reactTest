@@ -7,20 +7,12 @@ const Menu = () => {
       path: "/",
     },
     {
-      name: "Product",
-      path: "/product",
-    },
-    {
       name: "Category",
       path: "/category",
     },
     {
       name: "Services",
       path: "/services",
-    },
-    {
-      name: "Blog",
-      path: "/blog",
     },
     {
       name: "Contact",

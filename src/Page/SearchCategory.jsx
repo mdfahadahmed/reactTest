@@ -1,5 +1,7 @@
 import PropTypes from 'prop-types';
 import { useState } from "react";
+import { Link } from 'react-router-dom';
+import CardButton from "../Layout/Cardbutton";
 
 const SearchCategory = ({ products }) => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -27,7 +29,7 @@ const SearchCategory = ({ products }) => {
                 <img className="w-[100%] h-[400px]" src={product.thumbnail} alt="" />
 
                 <div className='py-5 px-5 flex justify-between hover:bg-black hover:text-white'>
-                    <h2 className='text-2xl font-bold'>Category: {product.title}</h2>
+                    <h2 className='text-2xl font-bold'>Title: {product.title}</h2>
                     {/* <h2>Price: ${product.price}</h2> */}
                 </div>
                 <hr/>
@@ -52,8 +54,11 @@ const SearchCategory = ({ products }) => {
 
                 <div className='py-5 px-5 flex justify-between hover:bg-black hover:text-white'>
                     <h2>Sku: {product.sku}</h2>
-                    <h2>Price: ${product.price}</h2>
+                    <h2>Tags: ${product.tags}</h2>
                 </div>
+                <div className="mt-6 mb-5 text-center justify-center" key={product.id}>
+                        <Link to={`/products/${product.id}`}><CardButton /></Link>
+                        </div>
               </div>
             );
           })}
