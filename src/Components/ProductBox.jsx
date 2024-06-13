@@ -5,7 +5,7 @@ import ProductImg from "../assets/React.webp";
 const ProductBox = ({brand, price, category, Tag }) => {
   return (
     <div className="border flex-col">
-      <img className="w-[400px] h-[400px]" src={ProductImg} alt="avatar" />
+      <img className="w-[400px] h-[400px]" src={ProductImg} alt={brand} />
       <div className="flex justify-between p-2">
         <h4>Brand Name : {brand}</h4>
         <h4>Price: ${price}</h4>

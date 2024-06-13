@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import Loading from "../Components/Loading";
 
 function LoadingGif() {
   const [isLoading, setIsLoading] = useState(true);
@@ -16,7 +15,9 @@ function LoadingGif() {
   return (
     <div className="m m-auto pt-4 w-[100%] flex justify-center">
       {isLoading && (
-        <img className="justify-center items-center align-middle text-center flex flex-wrap w-[20%]" src={Loading} alt="Loading" />
+        // <img className="justify-center items-center align-middle text-center flex flex-wrap w-[20%]" src={Loading} alt="Loading" />
+
+        <h1>loading...</h1>
       )}
     </div>
   );

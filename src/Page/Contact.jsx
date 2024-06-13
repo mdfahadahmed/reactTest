@@ -78,7 +78,7 @@ const Contact = () => {
             required
           ></textarea>
         </div>
-          <button type="submit" className="bg-black text-white px-5 py-3 rounded w-full"> Submit  </button>
+          <button type="submit" className="bg-black text-white px-5 py-3 rounded w-full hover:bg-[#f68f3d] uppercase"> Submit  </button>
        </form>
       </div>
     </div>

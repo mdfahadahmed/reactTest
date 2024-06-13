@@ -12,11 +12,11 @@ function Router() {
     <div>
      <Routes>
         <Route exact path='/' element={<Home/>} />
-        <Route exact path='/products/:id' element={<Product/>} />
-        <Route exact path='/category' element={<Category/>} />
-        <Route exact path='/services' element={<Services/>} />
-        <Route exact path='/contact' element={<Contact/>} /> 
-        <Route exact path='/all-category/:singleCategory' element={<SingleCategory/>} />
+        <Route  path='/products/:id' element={<Product/>} />
+        <Route  path='/category' element={<Category/>} />
+        <Route  path='/services' element={<Services/>} />
+        <Route  path='/contact' element={<Contact/>} /> 
+        <Route  path='/all-category/:singleCategory' element={<SingleCategory/>} />
      </Routes>
     </div>
   )

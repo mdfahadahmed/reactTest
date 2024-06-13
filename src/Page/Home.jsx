@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import LoadingPage from "../Components/Loading";
 import ProductList from "../Components/ProductList";
-import SearchCategory from "../Page/SearchCategory";
 
 
 function Home() {
@@ -18,15 +17,15 @@ function Home() {
   }, []);
 
 
+
+
   return (
     <div className="pt-10">
         <div>
           <h3 className="text-black text-4xl capitalize font-bold text-center">
             Product List
           </h3>
-          <div>
-            {itemslist ? <SearchCategory products={itemslist.products} /> : <LoadingPage />}
-          </div>
+      
         </div>
 
       <div className="root1">
@@ -40,7 +39,7 @@ function Home() {
         )}
         </div>
 
-        <div></div>
+       
         
       </div>
     </div>

@@ -19,8 +19,7 @@ const Product = () => {
         fetchProduct();
     }, [id]);
 
-    console.log(product)
-
+   
     if ( product === null ) {
         return (
           <LoddingPage/>
