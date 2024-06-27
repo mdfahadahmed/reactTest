@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import LoadingPage from "../Components/Loading";
+import LoadingGif from "../Components/LoadingGif";
 import ProductList from "../Components/ProductList";
 
 
@@ -28,13 +28,14 @@ function Home() {
       
         </div>
 
-      <div className="root1">
+      <div className="root1 pt-10">
         <div className="justify-center items-center">
         {itemslist ? (
           <ProductList itemslist={itemslist}/>
         ): (
 
-          <LoadingPage/>
+          <LoadingGif/>
+          
           
         )}
         </div>

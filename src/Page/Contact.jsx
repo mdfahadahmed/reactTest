@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Address from "../Layout/Address";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -32,11 +33,7 @@ const Contact = () => {
       </div>
       <div className='flex justify-between w-full px-6 py-10 gap-5'>
         <div className='w-[50%] px-10'>
-           <h2 className='text-2xl font-bold font-mono capitalize py-2'>helllo React</h2>
-           <h2 className='text-xl font-medium font-mono py-2'>01701229301</h2>
-           <h2 className='text-xl font-medium font-mono py-2'>01701121314</h2>
-           <h2 className='text-xl font-medium font-mono py-2'>inforeact@2024.com</h2>
-           <p className='text-base font-mono font-normal py-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis excepturi rerum est esse, obcaecati expedita vero illum impedit commodi, reprehenderit laboriosam! Nemo, accusamus officia. Vitae, velit? Eligendi autem libero magnam!</p>
+          <Address/>
         </div>
        <form onSubmit={handleSubmit} className="space-y-5 w-[50%]">
         <div>

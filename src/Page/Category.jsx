@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import Loading from "../Components/Loading";
+import LoadingGif from "../Components/LoadingGif";
+
 
 const Category = () => {
 
@@ -21,7 +22,7 @@ const Category = () => {
 
   return ( 
     <>
-    {loading ? (<Loading/>) : (
+    {loading ? (<LoadingGif/>) : (
       
       <div>
         <h2 className="py-5 text-center font-bold text-black text-3xl">All category</h2>

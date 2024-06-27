@@ -1,9 +1,14 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import ErrorPage from "../assets/404-error.gif";
 
 const ProductList = ({ itemslist }) => {
     if (!itemslist || !itemslist.products) {
-        return <div>This product is not available.</div>;
+        return (
+            <div>
+                <img src={ErrorPage} alt={ErrorPage} />
+            </div>
+        )
     }
     return (
         <div className='pb-10 flex flex-wrap justify-center items-center gap-10'>
@@ -35,7 +40,7 @@ const ProductList = ({ itemslist }) => {
                     <h4>Warranty: {product.warrantyInformation}</h4>
                 </div>
                 <div className="mt-6 mb-5 text-center justify-center" key={product.id}>
-                    <Link to={`/products/${product.id}`} className=''>View Details</Link>
+                    <Link className="text-lg font-bold text-white uppercase py-3 px-7 bg-black hover:bg-[#f68f3d]" to={`/products/${product.id}`}>View Details</Link>
                 </div>
             </div>
             ))};

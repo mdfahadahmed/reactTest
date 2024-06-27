@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import LoadingPage from "../Components/Loading";
+import LoadingGif from "../Components/LoadingGif";
 import CostomCategory from "../Page/CostomCategory";
 
 const SingleCategory = () => {
@@ -27,7 +27,7 @@ const SingleCategory = () => {
 
   return (
     <>
-      {Loading ? (<LoadingPage/>) : (
+      {Loading ? (<LoadingGif/>) : (
         <CostomCategory categoryProducts = {category} categoryName = {singleCategory}/>
       )}
     </>

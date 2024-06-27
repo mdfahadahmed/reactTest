@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import LoddingPage from "../Components/Loading";
+import LoadingGif from "../Components/LoadingGif";
+
 
 
 const Product = () => {
@@ -22,7 +23,7 @@ const Product = () => {
    
     if ( product === null ) {
         return (
-          <LoddingPage/>
+          <LoadingGif/>
         )
       }
 
@@ -33,7 +34,7 @@ const Product = () => {
             <div className="items-center justify-center">
             <div className="flex justify-between items-center w-[85%]">
                 <div className="w-[40%]">
-                    <img src={product.images} alt="product" />
+                    <img src={product.images} alt={product.id} />
                 </div>
                 <div className="w-[40%]">
                     <h4 className="text-black text-start text-4xl font-bold font-mono capitalize  py-4">{product.title}</h4>
